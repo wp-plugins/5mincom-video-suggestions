@@ -26,7 +26,7 @@
 			//$content=preg_replace('|<[^<>]*>|',' ',"$content");
 			$content = "<h1>".$title."</h1>".$content;
 			//$content=preg_replace('|\s{2,}|',' ',$content);
-			$content=$this->cleanup($content);
+			//$content=$this->cleanup($content);
 			
 			$htmlStart=<<<EOT
 			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -46,14 +46,17 @@ EOT;
 			}
 
 			// Write html to our temp file.
-			if (fwrite($handle, $htmlStart.$text.$htmlEnd) === FALSE) {
+			if (fwrite($handle, $text) === FALSE) {
 				echo '{"success": false,"error": "Cannot write to file."}';
 			    die();
 			}
 			
 			fclose($handle);
 			
-			$fiveMinApiCallUrl = self::APIURL.$uploadsPath.$theFileName."&num_of_videos=".self::MAX_AMMOUNT_OF_VIDEOS;
+			$fiveMinApiCallUrl = self::APIURL.$uploadsPath.$theFileName."&num_of_videos=".self::MAX_AMMOUNT_OF_VIDEOS."&sid=142";
+			
+			$fiveMinApiCallUrl = "http://syn.5min.com/handlers/SenseHandler.ashx?func=GetResults&sid=142&NumOfColumnsAsked=3&NumOfRowsAsked=1&isnewts=true&url=".$uploadsPath.$theFileName;
+			
 			//print($fiveMinApiCallUrl);
 			$curl_handle = curl_init();
 			curl_setopt($curl_handle, CURLOPT_URL, $fiveMinApiCallUrl);
@@ -64,7 +67,7 @@ EOT;
 			
 			// delete our temp file here .
 			unlink($filename);
-			
+			//return '{"success": false, "error":"'.$fiveMinApiCallUrl.'"}';
 			if (empty($response)){
 				return '{"success": false,"error": "Error reciving data from 5min (api url:'.$fiveMinApiCallUrl.'."}';
 			} else {

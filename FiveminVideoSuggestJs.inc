@@ -18,7 +18,7 @@
 	
 	function onFiveMinGetVideosComplete(responseJson) {
 		document.getElementById('FiveMin_VideoSuggestion_Msg').innerHTML = '';
-		var returnedItems= responseJson.items;
+		var returnedItems= responseJson.binding;
 		if (returnedItems==null){
 			if (responseJson.error!=null){
 			document.getElementById('FiveMin_VideoSuggestion_Msg').innerHTML = responseJson.error;
@@ -33,9 +33,21 @@
 			var item=returnedItems[i];
 			var videoElement = document.createElement('div');
 			videoElement.className = 'fivemin_suggested_video';
-			videoElement.innerHTML = '<div class="thumb"><img src="'+item.image+'"/></div>'+
-			'<div class="ttl">'+item.title+'</div>'+
-			'<div class="embedCode"><textarea class="embedCode">'+item.player.source+'</textarea></div>'+
+			var embedUrl = item.EmbedURL;
+			var itemTitle = item.Title;
+			var itemLink = item.PageURL;
+			var embedSource = "<div style='text-align:center'>"+
+			"<object width='480' height='401' id='FiveminPlayer' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000'>"+
+			"<param name='allowfullscreen' value='true'/><param name='allowScriptAccess' value='always'/>"+
+			"<param name='movie' value='"+embedUrl+"'/>"+
+			"<embed name='FiveminPlayer' src='"+embedUrl+"' type='application/x-shockwave-flash' width='480' height='401' allowfullscreen='true' allowScriptAccess='always'></embed>"+
+			"</object><br/>"+
+			"<a href='"+itemLink+"' style='font-family: Verdana;font-size: 10px;' target='_blank'>"+itemTitle+
+			"</a></div>";
+			
+			videoElement.innerHTML = '<div class="thumb"><img src="'+item.ThumbURL+'"/></div>'+
+			'<div class="ttl">'+item.Title+'</div>'+
+			'<div class="embedCode"><textarea class="embedCode">'+embedSource+'</textarea></div>'+
 			'</div>';
 			videoBox.appendChild(videoElement);
 		}

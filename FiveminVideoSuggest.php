@@ -67,7 +67,7 @@ function FiveMinVideoSuggestBox() {
 				top:5px;
 				right:5px;
 			}
-		
+
 	</style>
 	<?php require('FiveminVideoSuggestJs.inc'); ?>
 	<div style="clear: both"></div>
