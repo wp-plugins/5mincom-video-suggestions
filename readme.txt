@@ -22,7 +22,8 @@ Adds a video suggestions box to your wordpress admin area.
 
 
 1. Upload the folders contents to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+2. Make sure you have write permissions on your wordpress upload folder
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 
 == Frequently Asked Questions ==
@@ -34,11 +35,13 @@ Adds a video suggestions box to your wordpress admin area.
 
 == Changelog ==
 
-= 0.0.1 =
+= 0.2 =
+code refactoring
+nicer lightbox
+added search functionality
+
+= 0.1 =
 First release.
 
-== Arbitrary section ==
-
-== A brief Markdown Example ==
 
 
