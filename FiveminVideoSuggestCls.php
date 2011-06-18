@@ -6,7 +6,8 @@
 */
 
 	class FiveminVideoSuggestCls {
-		const APIURL = "http://api.5min.com/videoSeed/videos.json?url=";
+		const APIURL = "http://api.5min.com/videoSeed/videos.json?sid=203&url=";
+		const APISEARCHCALL ="http://api.5min.com/search/";
 		const MAX_AMMOUNT_OF_VIDEOS = 10;
 		
 		public function FiveminVideoSuggestCls($apikey = null) {
@@ -18,15 +19,36 @@
 			//$x = json_decode($response);
 			return $response;
 		}
+		public function getSearchResults($term) {
+			$response = $this->callFiveMinSearch($term);
+			
+			return $response;
+		}
+		
+		
+		private function callFiveMinSearch($searchTerm){
+		
+			$fiveMinApiCallUrl = self::APISEARCHCALL.$searchTerm."/videos.json?sid=203&num_of_videos=".self::MAX_AMMOUNT_OF_VIDEOS;
+			$curl_handle = curl_init();
+			curl_setopt($curl_handle, CURLOPT_URL, $fiveMinApiCallUrl);
+			curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
+			curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec($curl_handle);
+			curl_close($curl_handle);
+			
+			if (empty($response)){
+				return '{"success": false,"error": "Error reciving data from 5min (api url:'.$fiveMinApiCallUrl.'."}';
+			} else {
+				return $response;
+			}
+		}
+
 		
 		private function callFiveMin($content, $title = null) {
 			$content = $this->html2txt($content);
 			$title = $this->html2txt($title);
-			//$title=preg_replace('|<[^<>]*>|',' ',"$title");
-			//$content=preg_replace('|<[^<>]*>|',' ',"$content");
 			$content = "<h1>".$title."</h1>".$content;
-			//$content=preg_replace('|\s{2,}|',' ',$content);
-			//$content=$this->cleanup($content);
+
 			
 			$htmlStart=<<<EOT
 			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,9 +75,9 @@ EOT;
 			
 			fclose($handle);
 			
-			$fiveMinApiCallUrl = self::APIURL.$uploadsPath.$theFileName."&num_of_videos=".self::MAX_AMMOUNT_OF_VIDEOS."&sid=142";
+			$fiveMinApiCallUrl = self::APIURL.$uploadsPath.$theFileName."&num_of_videos=".self::MAX_AMMOUNT_OF_VIDEOS;//."&sid=142";
 			
-			$fiveMinApiCallUrl = "http://syn.5min.com/handlers/SenseHandler.ashx?func=GetResults&sid=142&NumOfColumnsAsked=3&NumOfRowsAsked=1&isnewts=true&url=".$uploadsPath.$theFileName;
+			//$fiveMinApiCallUrl = "http://syn.5min.com/handlers/SenseHandler.ashx?func=GetResults&sid=142&NumOfColumnsAsked=3&NumOfRowsAsked=1&isnewts=true&url=".$uploadsPath.$theFileName;
 			
 			//print($fiveMinApiCallUrl);
 			$curl_handle = curl_init();

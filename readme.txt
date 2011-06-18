@@ -3,7 +3,7 @@
 Contributors: adylevy
 Plugin Name: FiveMin Video Suggest
 Plugin URI: http://shared.5min.com/wordpress/FiveMinVideoSuggestWPPlugin.zip
-Version: 0.0.1
+Version: 0.2
 Author: 5Min Media
 Author URI: http://www.5min.com
 Tags: video, semantic

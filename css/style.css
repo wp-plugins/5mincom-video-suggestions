@@ -1,0 +1,68 @@
+#FiveMin_VideoSuggestions{
+			width:100%;
+			float:left;
+			padding-bottom:10px;
+		}
+		#FiveMin_VideoSuggestions .fivemin_suggested_video{
+			width:140px;
+			padding:4px;
+			border:1px solid #cfcfcf;
+			float:left;
+			margin-right:5px;
+		}
+			#FiveMin_VideoSuggestions .fivemin_suggested_video .thumb{
+				padding-bottom:5px;
+				cursor:pointer;
+				height:105px;
+				width:140px;
+				overflow:hidden;
+				position:relative;
+			}
+			#FiveMin_VideoSuggestions .fivemin_suggested_video .thumb .playIcon{
+				background:url('http://pshared.5min.com/Graphics/BarSeed/btn_play_smaller.png');
+				height:17px;
+				width:23px;
+				position:absolute;
+				top:2px;
+				right:2px;
+				opacity:0.3;
+			
+			}
+			#FiveMin_VideoSuggestions .fivemin_suggested_video .thumb:hover .playIcon{
+			opacity:1;
+			}
+			
+			
+			#FiveMin_VideoSuggestions .fivemin_suggested_video .ttl{
+				padding-bottom:5px;
+				height:36px;
+				font-size:11px;
+				line-height:12px;
+			}
+			#FiveMin_VideoSuggestions .fivemin_suggested_video textarea{
+				width:140px;
+				height:30px;
+			}
+			/* lightbox*/
+			.fiveMinVideoPreview{
+				position:absolute;
+				top:100px;
+				left:50%;
+				width:480px;
+				margin-left:-240px;
+				padding:15px;
+				padding-top:25px;
+				border:1px solid #cfcfcf;
+				background:#fff;
+			}
+			.fiveMinVideoPreview .closeFiveMinLb{
+				position:absolute;
+				top:5px;
+				right:5px;
+			}
+			
+			
+			
+			#fivemin-lightbox .player-wrapper{
+				width:656px;
+			}
