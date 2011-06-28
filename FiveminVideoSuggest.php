@@ -44,26 +44,10 @@ function FiveMinVideoSuggestBox() {
 
 
 
-add_filter('mce_external_plugins', "tinyplugin_register");
-add_filter('mce_buttons', 'tinyplugin_add_button', 0);
-
-function tinyplugin_add_button($buttons)
-{
-    array_push($buttons, "separator", "fiveminpagebreak");
-    return $buttons;
-}
-
-function tinyplugin_register($plugin_array)
-{
-    $url = trim(get_bloginfo('url'), "/")."/wp-content/plugins/FiveMinVideoSuggestWPPlugin/js/editor_plugin.js";
-
-    $plugin_array['fiveminpagebreak'] = $url;
-    return $plugin_array;
-}
-
+// this function will authorize the data-product / data-params attributes we want to chuck into the img element.
 function add_fivemin_to_mce_options( $init ) {
     // Command separated string of extended elements
-    $ext = 'fivemin[videoId|width|height]';
+    $ext = 'img[*]';
 
     // Add to extended_valid_elements if it alreay exists
     if ( isset( $init['extended_valid_elements'] ) ) {
@@ -77,7 +61,36 @@ function add_fivemin_to_mce_options( $init ) {
 }
 
 
-// add fivemin element to tinymce
+function add_5min_video($content) {
+	$szSearchPattern = '~<img class="fiveminVideoPlayer" [^>]* />~';
+	
+	preg_match_all($szSearchPattern, $content, $media);
+	for($i=0; $i<count($media[0]); $i++)
+	{
+		$img = ($media[0][$i]);
+		preg_match_all('/data-params="(.+?)"/',$img,$params);
+		/*
+		Array ( [0] => Array ( [0] => data-params="517061814" ) [1] => Array ( [0] => 517061814 ) ) Array ( [0] => Array ( [0] => data-params="500048780" ) [1] => Array ( [0] => 500048780 ) ) 
+		*/
+		if (count($params)!=0){
+			$paramsAttribute= $params[1][0];
+			// todo split by comma and implement parameters ....
+
+			$videoId = $paramsAttribute;
+
+			$vCode = "<div style='text-align:center'><object width='480' height='401' id='FiveminPlayer' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000'><param name='allowfullscreen' value='true'/><param name='allowScriptAccess' value='always'/><param name='movie' value='http://embed.5min.com/".$videoId."/&sid=203'/><embed name='FiveminPlayer' src='http://embed.5min.com/".$videoId."/&sid=203' type='application/x-shockwave-flash' width='480' height='401' allowfullscreen='true' allowScriptAccess='always'></embed></object></div>";
+			
+			$content = str_replace($img, $vCode, $content);
+			
+		}
+	}
+	return $content;
+}
+
+// add pre post render hook so we can convert img's to videos (thats where the magic is done)
+add_filter('the_content','add_5min_video');
+
+// validate fivemin attributes in img element inside tinymce
 add_filter('tiny_mce_before_init', 'add_fivemin_to_mce_options');
 //Register an AJAX hook for the get videos function
 add_action('wp_ajax_FiveMin_getVideos', 'FiveMin_getVideos');

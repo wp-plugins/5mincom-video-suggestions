@@ -22,7 +22,7 @@ var FIVEMINVIDEOSUGGESTPLUGIN= (function () {
 	
 	getSearchResults: function() {
 		document.getElementById('FiveMin_VideoSuggestion_Msg').innerHTML = 'Getting videos from 5min ...';
-		var searchTerm = jQuery(".fivemin-videosuggestbox .head .txt_ipt").val();
+		var searchTerm = escape(jQuery(".fivemin-videosuggestbox .head .txt_ipt").val());
 		jQuery.post(this.handlerUrl, {searchTerm:searchTerm, action: 'FiveMin_getSearchResults', cookie: document.cookie}, FIVEMIN.LIB.bind(this.onFiveMinGetVideosComplete,this),'json');
 	},
 	
@@ -68,8 +68,8 @@ var FIVEMINVIDEOSUGGESTPLUGIN= (function () {
 			
 			videoElement.innerHTML = '<div class="thumb"><div class="playIcon">&nbsp;</div><img src="'+itemImage+'"/></div>'+
 			'<div class="ttl">'+itemTitle+'</div>'+
-			'<div class="embedCode"><textarea class="embedCode2">'+embedSource+'</textarea><br/><b>to embed a video in post, Copy the above embed code to the html section.</b></div>'+
-			/*'<div class="addToPostWrapper"><a href="#" class="addToPost">Add To Post</div>'+*/
+			'<div class="embedCode" style="display:none;"><textarea class="embedCode2">'+embedSource+'</textarea><br/><b>to embed a video in post, Copy the above embed code to the html section.</b></div>'+
+			'<div class="addToPostWrapper"><a href="#" class="addToPost">Add To Post</div>'+
 			/*'<div class="embedCode"><textarea class="embedCode">'+playerSeed+'</textarea></div>'+*/
 			'</div>';
 			videoBox.appendChild(videoElement);
@@ -91,6 +91,11 @@ var FIVEMINVIDEOSUGGESTPLUGIN= (function () {
 	},
 	
 	addToPost: function(video){
+		//todo: alert if tiny is in html mode
+		var alt=escape(video.title);
+		var params=video.id;
+		tinyMCE.execCommand('mceInsertContent', false, '<div class="fiveminPlayerWrapper"><img class="fiveminVideoPlayer" width="480" height="400" src="'+video.image+'" alt="'+alt+'" data-product="playerSeed"  data-params="'+params+'"/></div>');
+
 	},
 	
 	 parseDate:function(d) {
@@ -133,7 +138,7 @@ var FIVEMINVIDEOSUGGESTPLUGIN= (function () {
 	 viewVideo : function (video) {
 			
 
-            var lightboxBody = '<div id="fivemin-lightbox"><div class="player-wrapper" style="float: left; width:656px;height:450px;margin-right: 20px;"><div id="fivemin-player-placeholder">&nbsp;</div></div><div class="player-texts">' +
+            var lightboxBody = '<div id="fivemin-lightbox"><div class="player-wrapper" style="float: left; width:656px;height:450px;margin-right: 20px;"><div id="fivemin-player-placeholder">&nbsp;</div></div><div class="player-texts" style="color:#fff;">' +
 				'<h3>' + video.title + '</h3>' +
 				'<p class="description">' + video.description + '</p>' +
 				'<p class="date">Added on ' + this.formatDate(this.parseDate(video.pubDate.split(' ')[0])) + '</p>';

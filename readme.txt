@@ -16,7 +16,8 @@ Suggests videos for your post, based on 5min semantic engine.
 
 == Description ==
 
-Adds a video suggestions box to your wordpress admin area.
+You just finished writing a great post and you would like to add a video to it ?
+Hit the video suggest button and instantly grab a video from 5min.com great video library!
 
 == Installation ==
 
@@ -32,16 +33,23 @@ Adds a video suggestions box to your wordpress admin area.
 == Screenshots ==
 
 1. The video suggestions box
+2. Video lightbox
 
 == Changelog ==
 
+= 0.2.1 =
+
+1. Add to post button for each video.
+
 = 0.2 =
-code refactoring
-nicer lightbox
-added search functionality
+
+1. Code refactoring
+2. Nicer lightbox 
+3. Added search functionality 
 
 = 0.1 =
-First release.
+
+1.First release.
 
 
 
