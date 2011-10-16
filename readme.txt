@@ -9,7 +9,7 @@ Author URI: http://www.5minmedia.com
 Tags: video, semantic
 
 Requires at least: 2.9
-Tested up to: 3.1.1
+Tested up to: 3.2.1
 Stable tag: trunk
 
 Suggests videos for your post, based on Aol Video semantic engine.
