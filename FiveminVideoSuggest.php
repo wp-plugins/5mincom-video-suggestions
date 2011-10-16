@@ -2,28 +2,18 @@
 /***************************************************************************
 
 Plugin Name: Aol Video Suggest
-Plugin URI: http://pshared.5min.com/wordpress/FiveMinVideoSuggestWPPlugin.zip
-Description: Suggests videos for your post, based on 5min semantic engine.
-Version: 0.2
+Plugin URI: http://www.5minmedia.com
+Description: Suggests videos for your post, based on Aol Video semantic engine.
+Version: 1.0
 Author: 5Min Media
 Author URI: http://www.5minmedia.com
 
 ***************************************************************************/
 
-//Include class
-//require('FiveminVideoSuggestCls.php');
 
-//error_reporting(E_ALL);
-//ini_set('display_errors', '1');
 
 function FiveMinVideoSuggest_admin_init() {
-    /*wp_enqueue_script('fivemin-baseconfig',WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/js/Fivemin.BaseConfig.js");
-	wp_enqueue_script('fivemin-lib',WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/js/Fivemin.Lib.js");
-	
-	wp_enqueue_script('fivemin-jquery',WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/js/Fivemin.JQuery.js");
-	wp_enqueue_script('fivemin-lightbox',WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/js/Fivemin.lightbox.js");
-	wp_enqueue_script('fivemin-video-suggest',WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/js/Fivemin.wp.plugin.js");
-	wp_enqueue_style('fivemin-video-css',  WP_PLUGIN_URL . "/FiveMinVideoSuggestWPPlugin/css/style.css");*/
+   
 	
 	wp_enqueue_script('fivemin-plugin',"http://pshared.5min.com/Scripts/Plugin.js?c=0&v=2");
 	wp_enqueue_style('fivemin-video-css',  "http://pshared.5min.com/Css/Plugin/Base.css");
