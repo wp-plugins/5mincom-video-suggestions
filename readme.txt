@@ -35,11 +35,19 @@ Adds a video suggestions box to your wordpress admin area.
 
 == Changelog ==
 
+= 1.1 =
+Removed unneccery code.
+Changed the plugin from a raw code to a class.
+
+= 1.0 =
+Better and improved release.
+
 = 0.0.1 =
 First release.
 
-= 1.0 ==
-Better and improved release.
+
+
+
 
 
 
