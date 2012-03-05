@@ -65,7 +65,7 @@ class FiveMinVideoSuggest {
 
 				$splitted= explode('|||', $paramsAttribute);
 				$paramsArray=array();
-				for($j=0;$j<=count($splitted);$j++){
+				for($j=0;$j<count($splitted);$j++){
 					$keyValuePair=explode('=',$splitted[$j]);
 					$paramsArray[$keyValuePair[0]]=$keyValuePair[1];
 				}
