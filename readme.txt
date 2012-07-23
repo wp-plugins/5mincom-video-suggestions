@@ -1,18 +1,18 @@
 === Plugin Name ===
 
-Contributors: adylevy
-Plugin Name: Aol Video Suggest
-Plugin URI: http://www.5minmedia.com
-Version: 1.0
-Author: Aol Video
-Author URI: http://www.5minmedia.com
+Contributors: adylevy, Diellan
+Plugin Name: The AOL On Network Video Plugin
+Plugin URI: http://on.aol.com
+Version: 1.2
+Author: The AOL On Network
+Author URI: http://on.aol.com
 Tags: video, semantic
 
 Requires at least: 2.9
 Tested up to: 3.2.1
 Stable tag: trunk
 
-Suggests videos for your post, based on Aol Video semantic engine.
+The AOL On Network’s video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player’s Layout and Advanced Settings can be easily configured using the plugin.
 
 == Description ==
 
@@ -34,6 +34,10 @@ Adds a video suggestions box to your wordpress admin area.
 2. The video suggestions box
 
 == Changelog ==
+
+= 1.2 =
+Changed admin scripts from http to https.
+Updated branding.
 
 = 1.1 =
 Removed unneccery code.
