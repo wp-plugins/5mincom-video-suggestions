@@ -1,12 +1,12 @@
 <?php
 /***************************************************************************
 
-Plugin Name: Aol Video Suggest
-Plugin URI: http://www.5minmedia.com
-Description: Suggests videos for your post, based on Aol Video semantic engine.
-Version: 1.1
-Author: 5Min Media
-Author URI: http://www.5minmedia.com
+Plugin Name: The AOL On Network Video Plugin
+Plugin URI: http://on.aol.com
+Description: The AOL On Network’s video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player’s Layout and Advanced Settings can be easily configured using the plugin.
+Version: 1.2
+Author: The AOL On Network
+Author URI: http://on.aol.com
 
 ***************************************************************************/
 
@@ -22,8 +22,8 @@ class FiveMinVideoSuggest {
 	}
 
 	function admin_print_styles() {
-		wp_enqueue_script('fivemin-plugin',"http://pshared.5min.com/Scripts/Plugin.js?c=0&v=2");
-		wp_enqueue_style('fivemin-video-css',  "http://pshared.5min.com/Css/Plugin/Base.css");
+		wp_enqueue_script('fivemin-plugin',"https://spshared.5min.com/Scripts/Plugin.js?v=3");
+		wp_enqueue_style('fivemin-video-css',  "https://spshared.5min.com/Css/Plugin/Base.css");
 	}
 
 	function add_meta_boxes() {
