@@ -4,7 +4,7 @@
 Plugin Name: The AOL On Network Video Plugin
 Plugin URI: http://on.aol.com
 Description: The AOL On Network’s video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player’s Layout and Advanced Settings can be easily configured using the plugin.
-Version: 1.2
+Version: 1.3
 Author: The AOL On Network
 Author URI: http://on.aol.com
 
@@ -22,7 +22,7 @@ class FiveMinVideoSuggest {
 	}
 
 	function admin_print_styles() {
-		wp_enqueue_script('fivemin-plugin',"https://spshared.5min.com/Scripts/Plugin.js?v=3");
+		wp_enqueue_script('fivemin-plugin',"https://spshared.5min.com/Scripts/Plugin.js?v=1.3");
 		wp_enqueue_style('fivemin-video-css',  "https://spshared.5min.com/Css/Plugin/Base.css");
 	}
 
@@ -33,9 +33,10 @@ class FiveMinVideoSuggest {
 	function meta_box_callback() {
 		$options = get_option('videoSuggest_options');
 		$sid = ( isset( $options['sid'] ) && 0 != $options['sid'] ) ? intval( $options['sid'] ) : 203;
+		$api = ( isset( $options['api'] ) && '' != $options['api'] ) ? $options['api'] : 'Wordpress';
 		?>
 		<div class='fivemin-videosuggestbox'>
-			<div id="fivemin-plugin" data-api="Wordpress" data-params="sid=<?php echo $sid; ?>"></div>
+			<div id="fivemin-plugin" data-api="<?php echo $api; ?>" data-params="sid=<?php echo $sid; ?>"></div>
 		</div>
 		<?php
 	}
@@ -92,14 +93,16 @@ class FiveMinVideoSuggest {
 
 	function admin_init(){
 		register_setting( 'media', 'videoSuggest_options', array( $this, 'sanitize_options' ) );
-		add_settings_section( 'videoSuggest_main', '5min Settings', '__return_false', 'media' );
+		add_settings_section( 'videoSuggest_main', 'Aol Video Settings', '__return_false', 'media' );
 		add_settings_field( 'videoSuggest_text_string', 'Syndicator Id', array( $this, 'settings_field_callback' ), 'media', 'videoSuggest_main' );
+		add_settings_field( 'videoSuggest_api_name', 'API Name', array( $this, 'settings_api_field_callback' ), 'media', 'videoSuggest_main' );
 
 		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( $this, 'plugin_action_links' ) );
 	}
 
 	function sanitize_options( $input ) {
 		$new_input['sid'] = isset( $input['sid'] ) ? intval( $input['sid'] ) : 0;
+		$new_input['api'] = isset( $input['api'] ) ? $input['api'] : 'Wordpress';
 		return $new_input;
 	}
 
@@ -112,6 +115,14 @@ class FiveMinVideoSuggest {
 		<?php
 	}
 
+	function settings_api_field_callback() {
+		$options = get_option('videoSuggest_options');
+		?>
+		<a name="videoSuggest"></a>
+		<input id="videoSuggest_api_name" name="videoSuggest_options[api]" size="40" type="text" value="<?php if ( isset( $options['api'] ) ) echo $options['api']; ?>" />
+		</br>
+		<?php
+	}
 }
 
 $five_min_video_suggest = new FiveMinVideoSuggest;
