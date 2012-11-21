@@ -1,0 +1,44 @@
+.color-scheme-list {
+	margin: 0;
+	list-style-type: none;
+	border: 0 none;
+	height: 23px;
+	padding: 0;
+}
+
+.color-scheme-list .color-scheme, .colorpicker-trigger {
+	border: solid 1px #C8C8C8;
+	padding: 2px;
+	float: left;
+	margin: 1px 5px;
+	cursor: pointer;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.color-scheme-list .color-scheme span, .colorpicker-trigger span {
+	display: block;
+	overflow: hidden;
+	height: 19px;
+	width: 21px;
+}
+
+.color-scheme-list .color-scheme.selected-color-scheme {
+	border: solid 2px #0CC;
+	margin: 0 4px;
+}
+
+.player-size-error-row th, .player-size-error-row td {
+	padding: 0;
+	height: 20px;
+}
+
+.player-size-error-row .player-size-error {
+	color: #CC0000;
+	display: none;
+}
+
+input.error {
+	border: 1px solid #CC0000 !important;
+}

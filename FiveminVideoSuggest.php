@@ -13,12 +13,14 @@ Author URI: http://on.aol.com
 class FiveMinVideoSuggest {
 
 	public function __construct() {
+				
 		add_filter( 'the_content', array( $this, 'the_content' ) );
 		add_filter( 'tiny_mce_before_init', array( $this, 'tiny_mce_before_init' ) );
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
 		add_action( 'admin_print_styles-post.php', array( $this, 'admin_print_styles' ) );
 		add_action( 'admin_print_styles-post-new.php', array( $this, 'admin_print_styles' ) );
-		add_action( 'admin_init', array( $this, 'admin_init' ) );
+		add_action( 'admin_init', array( $this, 'admin_init' ) );		
+		add_action( 'admin_menu', array( $this, 'admin_menu' ) );	
 	}
 
 	function admin_print_styles() {
@@ -32,13 +34,42 @@ class FiveMinVideoSuggest {
 
 	function meta_box_callback() {
 		$options = get_option('videoSuggest_options');
+						
 		$sid = ( isset( $options['sid'] ) && 0 != $options['sid'] ) ? intval( $options['sid'] ) : 203;
 		$api = ( isset( $options['api'] ) && '' != $options['api'] ) ? $options['api'] : 'Wordpress';
+		$tag = ( isset( $options['tag'] ) && '' != $options['tag'] ) ? $options['tag'] : '';
+		
 		?>
 		<div class='fivemin-videosuggestbox'>
+			<script type="text/javascript"> FIVEMIN.Plugins.Defaults = <?php echo json_encode($options); ?>; </script>
 			<div id="fivemin-plugin" data-api="<?php echo $api; ?>" data-params="sid=<?php echo $sid; ?>"></div>
 		</div>
-		<?php
+		<?php 
+			if( !empty($tag) ) {
+					//TODO: add the tag to param on the div 
+				?>
+					<script type="text/javascript">
+						jQuery(document).ready(function(){
+							
+							// change the add to post function from plugin
+							FIVEMIN.Plugins.Api.Wordpress.addContents = function(f) {
+								try {
+									if (window.switchEditors) {
+										window.switchEditors.go("content", "tinymce")
+									}
+								} catch (d) {}
+								if (window.tinyMCE) {
+									window.tinyMCE.execCommand("mceInsertContent", false, f)
+									
+									jQuery("#new-tag-post_tag").val("<?php echo $tag; ?>"); 
+									jQuery(".tagadd").trigger('click');
+								}
+							}
+						});
+					</script>
+		<?php	
+			}
+		
 	}
 
 	// Makes tinymce allow any attribute in the img element so we can add the data-product / data-params attributes we want.
@@ -46,7 +77,6 @@ class FiveMinVideoSuggest {
 		$init['extended_valid_elements'] = isset( $init['extended_valid_elements'] ) ? $init['extended_valid_elements'] . ',img[*]' : 'img[*]';
 		return $init;
 	}
-
 
 	// filter the_content to convert img's to videos (thats where the magic is done)
 	function the_content($content) {
@@ -92,37 +122,109 @@ class FiveMinVideoSuggest {
 	}
 
 	function admin_init(){
-		register_setting( 'media', 'videoSuggest_options', array( $this, 'sanitize_options' ) );
-		add_settings_section( 'videoSuggest_main', 'Aol Video Settings', '__return_false', 'media' );
-		add_settings_field( 'videoSuggest_text_string', 'Syndicator Id', array( $this, 'settings_field_callback' ), 'media', 'videoSuggest_main' );
-		add_settings_field( 'videoSuggest_api_name', 'API Name', array( $this, 'settings_api_field_callback' ), 'media', 'videoSuggest_main' );
-
+		
 		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( $this, 'plugin_action_links' ) );
+		
 	}
-
-	function sanitize_options( $input ) {
-		$new_input['sid'] = isset( $input['sid'] ) ? intval( $input['sid'] ) : 0;
-		$new_input['api'] = isset( $input['api'] ) ? $input['api'] : 'Wordpress';
-		return $new_input;
+	
+	/**
+	 * 	Admin page bellow
+	 */
+	function admin_menu() {
+		add_submenu_page('options-general.php', 'AOL Video Plugin','AOL Video Plugin Settings','manage_options','aolvideo-settings',array($this, 'settings_page'));
 	}
-
-	function settings_field_callback() {
+	
+	function settings_page() {
+		
+		$url = plugins_url("static", __FILE__);
+		
+		wp_enqueue_style('aol-videos-colorpicker-css', $url."/css/colorpicker.css");
+		wp_enqueue_style('aol-videos-plugin-css', $url."/css/style.css");
+		
+		wp_enqueue_script('aol-videos-colorpicker-js', $url."/js/colorpicker.js");
+		wp_enqueue_script('aol-videos-plugin-js', $url."/js/scripts.js");
+				
 		$options = get_option('videoSuggest_options');
-		?>
-		<a name="videoSuggest"></a>
-		<input id="videoSuggest_text_string" name="videoSuggest_options[sid]" size="40" type="text" value="<?php if ( isset( $options['sid'] ) ) echo intval( $options['sid'] ); ?>" />
-		</br>
-		<?php
-	}
-
-	function settings_api_field_callback() {
+		
+		if( isset($_POST['videoSuggest_options']) ) {
+		
+			$data = array();
+						
+			// handle the player width and height			
+			if( isset($_POST['videoSuggest_options']['fivemin-player-size-width']) && 
+				!empty($_POST['videoSuggest_options']['fivemin-player-size-width']) && 
+				isset($_POST['videoSuggest_options']['fivemin-player-size-height']) &&
+				!empty($_POST['videoSuggest_options']['fivemin-player-size-height']) )
+			{
+				
+				$data['fivemin-player-size'] = esc_attr($_POST['videoSuggest_options']['fivemin-player-size-width']) ."X". esc_attr($_POST['videoSuggest_options']['fivemin-player-size-height']);
+			}
+			unset($_POST['videoSuggest_options']['fivemin-player-size-width']);
+			unset($_POST['videoSuggest_options']['fivemin-player-size-height']);
+			
+			/////
+			//   checkboxes bellow
+			/////
+			
+			// show title
+			if( isset($_POST['videoSuggest_options']['fivemin-showTitle']) )
+				$data['fivemin-showTitle'] = "true";
+			else
+				$data['fivemin-showTitle'] = "false";
+			unset($_POST['videoSuggest_options']['fivemin-showTitle']);
+			
+			// auto start
+			if( isset($_POST['videoSuggest_options']['fivemin-autoStart']) )
+				$data['fivemin-autoStart'] = "true";
+			else
+				$data['fivemin-autoStart'] = "false";
+			unset($_POST['videoSuggest_options']['fivemin-autoStart']);
+			
+			// Continuous play
+			if( isset($_POST['videoSuggest_options']['fivemin-continuous']) )
+				$data['fivemin-continuous'] = "true";
+			else
+				$data['fivemin-continuous'] = "false";
+			unset($_POST['videoSuggest_options']['fivemin-continuous']);
+			
+			// Shuffle videos
+			if( isset($_POST['videoSuggest_options']['fivemin-shuffle']) )
+				$data['fivemin-shuffle'] = "true";
+			else
+				$data['fivemin-autoStart'] = "false";
+			unset($_POST['videoSuggest_options']['fivemin-shuffle']);
+			
+			
+			// custom ad position
+			if( isset($_POST['videoSuggest_options']['fivemin-ad-unit-location']) && $_POST['videoSuggest_options']['fivemin-ad-unit-location'] != "custom" ) 
+			{
+					$_POST['videoSuggest_options']['fivemin-cb-custom-id'] = "";
+			}
+			
+			
+			// save all the options			
+			foreach( $_POST['videoSuggest_options']  as $name => $option)
+				$data[$name] = esc_attr($option);
+			
+			$res = update_option('videoSuggest_options', $data);  
+			
+		}
+		
 		$options = get_option('videoSuggest_options');
-		?>
-		<a name="videoSuggest"></a>
-		<input id="videoSuggest_api_name" name="videoSuggest_options[api]" size="40" type="text" value="<?php if ( isset( $options['api'] ) ) echo $options['api']; ?>" />
-		</br>
-		<?php
+				
+		if( isset($options['fivemin-player-size']) ) {
+			$playerSize = explode('X', $options['fivemin-player-size']);
+			$options['fivemin-player-size-width'] = $playerSize[0];
+			$options['fivemin-player-size-height'] = $playerSize[1];
+			
+			unset($options['fivemin-player-size']);
+		}
+		
+		// display the view
+		require_once('admin_page.php');
+		
 	}
+	
 }
 
 $five_min_video_suggest = new FiveMinVideoSuggest;
