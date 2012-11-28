@@ -24,7 +24,7 @@ class FiveMinVideoSuggest {
 	}
 
 	function admin_print_styles() {
-		wp_enqueue_script('fivemin-plugin',"https://spshared.5min.com/Scripts/Plugin.js?v=1.3");
+		wp_enqueue_script('fivemin-plugin',"https://embed.5min.com/cmsplugin");
 		wp_enqueue_style('fivemin-video-css',  "https://spshared.5min.com/Css/Plugin/Base.css");
 	}
 

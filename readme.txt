@@ -3,7 +3,7 @@
 Contributors: adylevy, Diellan
 Plugin Name: The AOL On Network Video Plugin
 Plugin URI: http://on.aol.com
-Version: 1.2
+Version: 1.3
 Author: The AOL On Network
 Author URI: http://on.aol.com
 Tags: video, semantic
@@ -32,6 +32,10 @@ The AOL On Network’s video plugin for WordPress, allows you to embed videos in y
 2. The video suggestions box
 
 == Changelog ==
+
+= 1.3 =
+Added custom admin page
+Update script from shared to embed
 
 = 1.2 =
 Changed admin scripts from http to https.
