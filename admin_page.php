@@ -31,7 +31,14 @@
 				</tr>
 				
 				<tr valign="top">
-					<th scope="row"><h3>Defalut Layout Settings</h3></th>
+					<th scope="row"></th>
+					<td>
+						This tag will be automatically added to the post when you insert a video using the plugin.
+					</td>
+				</tr>
+				
+				<tr valign="top">
+					<th scope="row"><h3>Default Layout Settings</h3></th>
 					<td> </td>
 				</tr>
 				
@@ -101,7 +108,7 @@
 								if(!isset( $options['fivemin-related-mode'] ))
 									$options['fivemin-related-mode'] = 2;
 							?>
-							<option value="2" <?php echo ($options['fivemin-related-mode'] == '2')?'selected="selected"':''; ?> >Bottom(Defalut)</option>
+							<option value="2" <?php echo ($options['fivemin-related-mode'] == '2')?'selected="selected"':''; ?> >Bottom(Default)</option>
 							<option value="3" <?php echo ($options['fivemin-related-mode'] == '3')?'selected="selected"':''; ?>>Open Bottom</option>
 							<option value="1" <?php echo ($options['fivemin-related-mode'] == '1')?'selected="selected"':''; ?>>Auto Height</option>
 							<option value="101" <?php echo ($options['fivemin-related-mode'] == '101')?'selected="selected"':''; ?>>Right</option>
@@ -125,7 +132,7 @@
 								if(!isset( $options['fivemin-ad-unit-location'] ))
 									$options['fivemin-ad-unit-location'] = "";
 							?>
-							<option value="" <?php echo ($options['fivemin-ad-unit-location'] == '')?'selected="selected"':''; ?> >None (Defalut)</option>
+							<option value="" <?php echo ($options['fivemin-ad-unit-location'] == '')?'selected="selected"':''; ?> >None (Default)</option>
 							<option value="custom" <?php echo ($options['fivemin-ad-unit-location'] == 'custom')?'selected="selected"':''; ?>>Custom</option>
 							<option value="below" <?php echo ($options['fivemin-ad-unit-location'] == 'below')?'selected="selected"':''; ?>>Below</option>
 							<option value="right" <?php echo ($options['fivemin-ad-unit-location'] == 'right')?'selected="selected"':''; ?>>Right</option>
@@ -157,7 +164,7 @@
 				</tr>
 				
 				<tr valign="top">
-					<th scope="row"><h3>Defalut Advanced Options</h3></th>
+					<th scope="row"><h3>Default Advanced Options</h3></th>
 					<td> </td>
 				</tr>
 				
