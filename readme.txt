@@ -9,19 +9,19 @@ Author URI: http://on.aol.com
 Tags: video, semantic
 
 Requires at least: 2.9
-Tested up to: 3.4.2
+Tested up to: 3.5.1
 Stable tag: trunk
+
+The AOL On Network's video plugin for Wordpress allows you to embed videos in your posts or pages using our vast video library.
 
 == Description ==
 
-The AOL On Network’s video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player’s Layout and Advanced Settings can be easily configured using the plugin.
+The AOL On Network’s video plugin for WordPress allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player’s Layout and Advanced Settings can be easily configured using the plugin.
 
 == Installation ==
 
-
 1. Upload the folders contents to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-
 
 == Frequently Asked Questions ==
 
