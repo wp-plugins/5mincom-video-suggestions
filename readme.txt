@@ -22,9 +22,9 @@ Features:
 
 + Search The AOL On Network video library of over 600,000 videos
 + Browse videos by Studio, Category or sub-categories
-+ Receive semantically matched videos for your article
-+ Grab a playlist for your article
-+ Customize the player size and color theme to fit your page's look and feel
++ Receive semantically matched videos for an article
++ Grab a playlist to embed in an article
++ Customize the player size and color theme to fit a page's look and feel
 
 If you need help with your plugin, Please contact our support team at:
 
