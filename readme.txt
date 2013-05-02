@@ -90,7 +90,7 @@ Mouse over the thumbnail to display more detailed information about a video. If 
 = Why is some of the text in the video information red? =
 The red text indicates restrictions placed on a video. These restriction may include geographic restriction, expiration dates, etc.
 
-= What's the difference between the “ADD TO POST” button and “Grab code” procedure? =
+= What's the difference between the "ADD TO POST" button and “Grab code” procedure? =
 The “ADD TO POST” button will place a thumbnail of the initial video in your list at the current cursor location. This thumbnail is a graphic representation of the player with the loaded videos. The actual player will only be visible after submitting your article.
 
 The “Grab code” procedure allows you to copy the code containing all of your Player and video information and paste it anywhere in your article.
