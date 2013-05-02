@@ -47,6 +47,8 @@ You’re ready to use The AOL On Network Video Plugin!
 1.	Expand the “Plugins” tab and click “Settings” just below The AOL On Network Video Plugin text in the first column.
 2.	Change the settings as required, and then click the “Save Changes” button. 
 
+Note: In the VIP version of WordPress, you must enter your Syndicator ID (SID) in the designated text field. If you don’t enter your SID, you will not receive credit for any viewing instances. If you don’t have a SID, contact our support team at: <https://support.aolonnetwork.com>
+
 == Frequently Asked Questions ==
 
 **Can I control the Pre-Roll advertisements that play in front of videos I embed?**
@@ -96,10 +98,15 @@ Note: The “Grab code” procedure results only appear in your article after it is 
 
 == Screenshots ==
 
-1. Customization Area
-2. The video suggestions box
+1. The AOL On Network Video Plugin panel with a Search Results screen
+2. The AOL On Network Video Plugin panel with an expanded Select Videos area
+3. The AOL On Network Video Plugin panel with expanded customization options
+4. The AOL On Network Video Plugin Search Results screen
 
 == Changelog ==
+
+= 1.7 =
+Updated screenshots
 
 = 1.6 =
 Updated documentation
