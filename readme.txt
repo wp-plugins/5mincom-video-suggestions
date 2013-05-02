@@ -6,19 +6,19 @@ Plugin URI: http://on.aol.com
 Version: 1.6
 Author: The AOL On Network
 Author URI: http://on.aol.com
-Tags: video, semantic, ad revenue, AOL, AOL Video, AOL On Network, Content Exchange, video syndication, AOL plugin, video plugin, professional video, video, video catalog, video content, video feed, video player, video distribution, embed video, video plugin, blog publisher, blog editors, blog tools, video semantic matching, digital media planning, ad opportunities
+Tags: video, semantic matching, ad revenue, AOL Video, video syndication, video plugin, video, embed video, blog tools, digital media planning, ad opportunities
 
 Requires at least: 2.9
 Tested up to: 3.5.1
 Stable tag: trunk
 
-A user-friendly solution for editors to embed videos from our premium library. Video selection can be done manually or automatically via our smart semantic technology.
+A user-friendly solution for editors to embed videos from our premium library. Video selection can be done manually or automatically via our semantic engine.
 
 == Description ==
 
 The AOL On Network's video syndication solution includes a vast video library for video syndication across multiple platforms and devices. To enable Editors and Publishers to embed videos in their articles from their work environment, we have created The AOL On Network Video Plugin. This plugin provides editors with a user-friendly solution to embed videos that best fits their article. The plugin sits on top of the WordPress editor making it easy and accessible. 
 
-=Features=
+== Features ==
 
 + Search The AOL On Network video library of over 600,000 videos
 + Browse videos by Studio, Category or sub-categories
@@ -35,17 +35,17 @@ If you need help with your plugin, Please contact our support team at:
 = To install The AOL On Network Video Plugin: =
 
 1.	Log in to your WordPress account. 
-2.	Expand the “Plugins” tab, and click on “Add New”.
-3.	Search for “The AOL On Network Video Plugin”.
-4.	Click “Install Now”, and confirm the installation. A successful installation screen is displayed.
-5.	Click the “Plugins” tab, and then click “Activate Plugin”. 
+2.	Expand the "Plugins" tab, and click on "Add New".
+3.	Search for "The AOL On Network Video Plugin".
+4.	Click "Install Now", and confirm the installation. A successful installation screen is displayed.
+5.	Click the "Plugins" tab, and then click "Activate Plugin". 
 
 You're ready to use The AOL On Network Video Plugin!
 
 = To configure The AOL On Network Video Plugin: =
 
-1.	Expand the “Plugins” tab and click “Settings” just below The AOL On Network Video Plugin text in the first column.
-2.	Change the settings as required, and then click the “Save Changes” button. 
+1.	Expand the "Plugins" tab and click "Settings" just below The AOL On Network Video Plugin text in the first column.
+2.	Change the settings as required, and then click the "Save Changes"	 button. 
 
 Note: In the VIP version of WordPress, you must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you will not receive credit for any viewing instances. If you don't have a SID, contact our support team at: <https://support.aolonnetwork.com>
 
