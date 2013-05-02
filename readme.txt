@@ -18,7 +18,7 @@ A user-friendly solution to embed videos from our premium library. Video selecti
 
 The AOL On Network's video syndication solution includes a vast video library for video syndication across multiple platforms and devices. To enable Editors and Publishers to embed videos in their articles from their work environment, we have created The AOL On Network Video Plugin. This plugin provides editors with a user-friendly solution to embed videos that best fits their article. The plugin sits on top of the WordPress editor making it easy and accessible. 
 
-== Features ==
+Features:
 
 + Search The AOL On Network video library of over 600,000 videos
 + Browse videos by Studio, Category or sub-categories
