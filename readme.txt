@@ -44,10 +44,10 @@ You're ready to use The AOL On Network Video Plugin!
 
 = To configure The AOL On Network Video Plugin: =
 
-1.	Expand the "Plugins" tab and click "Settings" just below The AOL On Network Video Plugin text in the first column.
-2.	Change the settings as required, and then click the "Save Changes"	 button. 
+1.	Expand the "Settings" tab and click "AOL Video Plugin Settings". The AOL video settings are displayed.
+2.	Change the settings as required, and then click the "Save Changes" button. 
 
-Note: In the VIP version of WordPress, you must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you will not receive credit for any viewing instances. If you don't have a SID, contact our support team at: <https://support.aolonnetwork.com>
+Note: You must enter your Syndicator ID (SID) in the designated text field. If you don’t enter your SID, you will not receive credit for any viewing instances. If you forgot your SID, contact our support team at: <https://support.aolonnetwork.com>
 
 == Frequently Asked Questions ==
 
