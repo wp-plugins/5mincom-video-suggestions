@@ -263,3 +263,4 @@
 		</script>
 		
 		</div>
+update_option( 'avatar_default', 'C:\Temp\WPicon-bw.jpg' );
