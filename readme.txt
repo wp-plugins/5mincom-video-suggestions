@@ -61,7 +61,7 @@ Only the owner of a video can define an Expiration Date. When a video's expirati
 A Playlist is a pre-existing group of videos. Each playlist has its own unique ID.
 
 = How does automatic matching work in the CMS plugin? =
-Automatic matching scans your article and offers videos related to the content. It’s a hassle free way of adding a video to every article on your site.
+Automatic matching scans your article and offers videos related to the content. It's a hassle free way of adding a video to every article on your site.
 
 = Is there a recommended size for the player? =
 Our player's default size is 570W x 531H. You can change this to fit your requirement. However, we do recommend keeping a 4/3 or 16/9 ratio.
