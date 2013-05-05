@@ -226,5 +226,5 @@ class FiveMinVideoSuggest {
 	}
 	
 }
-update_option( 'avatar_default', 'C:\Temp\WPicon-bw.jpg' );
+
 $five_min_video_suggest = new FiveMinVideoSuggest;
