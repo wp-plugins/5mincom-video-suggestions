@@ -133,7 +133,7 @@ Changed admin scripts from http to https.
 Updated branding.
 
 = 1.1 =
-Removed unneccery code.
+Removed unnecessary code.
 Changed the plugin from a raw code to a class.
 
 = 1.0 =
