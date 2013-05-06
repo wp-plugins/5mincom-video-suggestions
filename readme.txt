@@ -51,7 +51,7 @@ Note: You must enter your Syndicator ID (SID) in the designated text field. If y
 
 == Frequently Asked Questions ==
 
-+General+
++ General +
 
 = How do I see the video library without searching for a specific term? =
 From The AOL On Network Plugin panel's Select Videos area, leave the Search field empty and click "Search". The Search Results screen will show all avaiable videos in chronologic order.  
@@ -95,7 +95,7 @@ The red text indicates restrictions placed on a video. These restriction may inc
 = How does automatic matching work in the CMS plugin? =
 Automatic matching scans your article and offers videos related to the content. It's a hassle free way of adding a video to every article on your site.
 
-+Content+
++ Content +
 
 = What does an Expiration Date mean in the Video Information? =
 Only the owner of a vWhat does the Geo-Restriction mean in the video information?ideo can define an Expiration Date. When a video's expiration date arrives, the video is removed from syndication and will no longer be available, even if it is embedded in your article.
@@ -108,7 +108,7 @@ If a viewer outside the specified region tries playing a Geo-Restricted video, t
 = Can I control the Pre-Roll advertisements that play in front of videos I embed? =
 Yes. If there is a conflict of interest, you can block an advertisement or advertiser from displaying on your page. To block an advertisement/advertiser, gather relevant information (i.e., the advertiser's name, product name and take a screenshot of the advertisement), and then contact your Account Manager.
 
-+Player+
++ Player +
 
 = Is there a recommended size for the player? =
 Our player's default size is 570W x 531H. You can change this to fit your requirement. However, we do recommend keeping a 4/3 or 16/9 ratio.
