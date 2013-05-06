@@ -49,6 +49,8 @@ You're ready to use The AOL On Network Video Plugin!
 
 Note: You must enter your Syndicator ID (SID) in the designated text field. If you don’t enter your SID, you will not receive credit for any viewing instances. If you forgot your SID, contact our support team at: <https://support.aolonnetwork.com>
 
+== FAQs ==
+
 === Frequently Asked Questions ===
 
 == General ==
