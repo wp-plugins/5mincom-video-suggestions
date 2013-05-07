@@ -90,7 +90,7 @@ You can search for a playlist from The AOL On Network Plugin panel, by its ID in
 = In the Search Results screen, some thumbnails have an exclamation point in a red circle at the top left. What does it mean? =
 When a thumbnail includes an exclamation point in a red circle it means that the video is available, but with one or more restrictions. To see a detailed description of a video's restrictions, mouseover the thumbnail.
 
-=In the Search Results screen, what does the timestamp at the top right of each thumbnail mean? =
+= In the Search Results screen, what does the timestamp at the top right of each thumbnail mean? =
 The timestamp on a thumbnail indicates the length of the video.
 
 = How do I change the appearance of the Search Results screen? =
