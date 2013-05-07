@@ -50,6 +50,7 @@ You're ready to use The AOL On Network Video Plugin!
 2. Change the settings as required, and then click the "Save Changes" button. 
 
 Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at:
+
 <https://support.aolonnetwork.com>
 
 == Frequently Asked Questions ==
