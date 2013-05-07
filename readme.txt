@@ -17,7 +17,8 @@ A user-friendly solution to embed videos from our premium library. Video selecti
 == Description ==
 
 The AOL On Network creates, curates, programs, distributes videos across all screens and measures audience engagement.
-The AOL On Network's video syndication plugin solution includes access to a vast video library. These high quality, engaging videos can be delivered across multiple platforms and devices via The AOL On Network Video Plugin’s innovative technology. The plugin enables Editors and Publishers to embed videos into their articles from within the WordPress work environment. The Editors will appreciate the seamless integration of the plugin's user interface and the minimal time and effort required to embed videos that best fits their article and target audience.
+
+The AOL On Network's video syndication plugin solution includes access to a vast video library. These high quality, engaging videos can be delivered across multiple platforms and devices via The AOL On Network Video Plugin's innovative technology. The plugin enables Editors and Publishers to embed videos into their articles from within the WordPress work environment. The Editors will appreciate the seamless integration of the plugin's user interface and the minimal time and effort required to embed videos that best fits their article and target audience.
 
 
 Features:
@@ -49,7 +50,8 @@ You're ready to use The AOL On Network Video Plugin!
 1.	Expand the "Settings" tab and click "AOL Video Plugin Settings". The AOL video settings are displayed.
 2.	Change the settings as required, and then click the "Save Changes" button. 
 
-Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at: <https://support.aolonnetwork.com>
+Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at: 
+<https://support.aolonnetwork.com>
 
 == Frequently Asked Questions ==
 
@@ -95,29 +97,36 @@ The timestamp on a thumbnail indicates the length of the video.
 The two buttons below the Search field, on the right, allow you to change the view of the Search Results screen. The first button changes it to a Large Thumbnail view. The second button changes it to a Details view. 
 
 = Where can I learn more about a video before I decide if it belongs in my video group (Selection list)? =
-There are two ways to get information about s video:
+There are two ways to get information about a video:
 + Mouseover the thumbnail to display general information about a video in a popup. 
 + Click the thumbnail to open a lightbox where you can play the video and see more details about the video.
 
 = Why is some of the text in the video information red? =
 The red text indicates restrictions placed on a video. These restrictions may include geographic restriction, expiration dates, etc.
 
-= How does automatic matching work in the The AOL On Network Video Plugin? =
-Automatic matching scans your article and offers videos related to the content in the Search Results screen. It's a hassle free way of adding a video to every article on your site.
-= Can I change the order inwhich videos will appear in the player? =
-Videos will appear in the player in the same order as they appear in the Selection list. To change the order, drag & drop (up or down) a video in the Selection list.
+= How does automatic matching work? =
+Automatic matching scans your article and offers videos related to the content in the Search Results screen. It's a hassle free way of adding a video to articles on your site.
+= Can I change the order in which videos will appear in the player? =
+Videos appear in the player in the same order as in your Selection list. To change the order in the Selection list, drag & drop a video up or down in the list.
+
+= How extensive are the filter and sort options? =
+The filter and sort mechanism is quite powerful. Sorts can be performed on relevance, popularity and chronology. The standard filters include time, category and studio. And if this is not enough, click "more" to add a language and geographic availability filter.
+If you're happy with a particular group of sort and filter settings, click "Save Filter" below the settings to preserve the configuration for future use. Saved sort and filter settings are listed under "MY FILTERS" at the top of the settings. 
+To delete a saved sort and filter configuration, mouseover the saved configuration and click the "X" that appear to the right. 
+
+
 
 *Content*
 
 = What does an Expiration Date mean in the Video Information? =
-Only the owner of a video can assign an Expiration Date. When a video's expiration date arrives, the video is removed from syndication and will no longer be available, even if it's already embedded in your article.
+Only the owner of a video can assign an Expiration Date. When a video's expiration date arrives, the video is removed from syndication and will no longer be available, even if it has already been embedded in an article.
 
 = What does the Geo-Restriction mean in the video information? =
 Only the owner of a video can assign Geo-Restrictions. A Geo-Restriction specifies regions where the video will be available. This is useful for those owners who want to target an audience in specific country or continent.
 
 If a viewer outside the specified country or continent tries to play a Geo-Restricted video, a message will appear in the player stating that the video is not available in their region.
 
-= Can I control the Pre-Roll advertisements that plays in front of videos I want to embed in my article? =
+= Can I control the Pre-Roll advertisements that run in front of my embedded videos? =
 Yes. If there is a conflict of interest, you can block an advertisement or advertiser from displaying on your page. To block an advertisement/advertiser, gather the relevant information (i.e., the advertiser's name, product name and take a screenshot of the advertisement), and then contact your Account Manager.
 
 *Player*
@@ -125,10 +134,10 @@ Yes. If there is a conflict of interest, you can block an advertisement or adver
 = Is there a recommended size for the player? =
 Our player's default size is 570W x 531H. You can change this to fit your requirement in the plugin's setting screen. However, we do recommend keeping a 4/3 or 16/9 ratio.
 
-= Can I customize the player's size from The AOL On Network Plugin panel? =
+= Can I customize the player's size? =
 Yes. The player size can be changed in the plugin panel's Customized Layout section. 
 
-= Can I customize the default player's colors from The AOL On Network Plugin panel? =
+= Can I customize the default player's colors? =
 Yes. The colors can be customized in the plugin panel's Advanced Option section. In addition, the default colors can be changed in the plugin's setting screen.
 
 
@@ -148,6 +157,7 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 4. The AOL On Network Video Plugin Search Results screen
 5. The AOL On Network Video Plugin Search Results (list view) with lightbox
 6. The AOL On Network Video Plugin Search Results (list view) with mouseover popup information
+7. The AOL On Network Video Plugin Search Results extended Filter and Sort options
 
 == Changelog ==
 
