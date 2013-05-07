@@ -29,8 +29,7 @@ Features:
 + Add a video group or playlist to an article
 + Customize the player size and color theme to fit a page's look and feel
 
-If you need help with your plugin, Please contact our support team at:
-
+If you need help with your plugin, please contact our support team at:
 <https://support.aolonnetwork.com/>
 
 == Installation ==
@@ -50,7 +49,7 @@ You're ready to use The AOL On Network Video Plugin!
 1.	Expand the "Settings" tab and click "AOL Video Plugin Settings". The AOL video settings are displayed.
 2.	Change the settings as required, and then click the "Save Changes" button. 
 
-Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at: 
+Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at:
 <https://support.aolonnetwork.com>
 
 == Frequently Asked Questions ==
@@ -69,7 +68,7 @@ After submitting the article, the player with your first video already loaded ap
 = What's the difference between the "ADD TO POST" button and "Grab code" procedure? =
 The "ADD TO POST" button will embed a thumbnail of the initial video in your list at the current cursor location. This thumbnail is a graphic placeholder for the player. The actual player will only be visible after you submit your article.
 
-The "Grab code" procedure allows you to copy the code containing all of your Player and video information. This code can be embedded in a standard HTML page or shared with other.
+The "Grab code" procedure allows you to copy the code containing all of your Player and video information. This code can be embedded in a standard HTML page or shared with others.
 
 = What's a playlist? =
 A Playlist is a pre-existing group of videos. Each playlist has its own unique ID. A playlist is selected by its ID in the "Use Playlist" tab.
@@ -112,7 +111,7 @@ Videos appear in the player in the same order as in your Selection list. To chan
 = How extensive are the filter and sort options? =
 The filter and sort mechanism is quite powerful. Sorts can be performed on relevance, popularity and chronology. The standard filters include time, category and studio. And if this is not enough, click "more" to add a language and geographic availability filter.
 If you're happy with a particular group of sort and filter settings, click "Save Filter" below the settings to preserve the configuration for future use. Saved sort and filter settings are listed under "MY FILTERS" at the top of the settings. 
-To delete a saved sort and filter configuration, mouseover the saved configuration and click the "X" that appear to the right. 
+To delete a saved sort and filter configuration, mouseover the saved configuration, then and click the "X" that appear to the right. 
 
 
 
@@ -132,16 +131,16 @@ Yes. If there is a conflict of interest, you can block an advertisement or adver
 *Player*
 
 = Is there a recommended size for the player? =
-Our player's default size is 570W x 531H. You can change this to fit your requirement in the plugin's setting screen. However, we do recommend keeping a 4/3 or 16/9 ratio.
+Our player's default size is 570W x 531H. You can change this to fit your requirement in the plugin's Settings screen. However, we do recommend keeping a 4/3 or 16/9 ratio.
 
 = Can I customize the player's size? =
 Yes. The player size can be changed in the plugin panel's Customized Layout section. 
 
-= Can I customize the default player's colors? =
-Yes. The colors can be customized in the plugin panel's Advanced Option section. In addition, the default colors can be changed in the plugin's setting screen.
+= Can I change the player's default colors? =
+ The default colors can be changed in the plugin's Settings screen.
 
-
-
+= Can I customize the player's colors? =
+Yes. The colors can be customized in the plugin panel's Advanced Option section.
 
 
 
