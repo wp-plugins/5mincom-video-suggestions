@@ -46,8 +46,8 @@ You're ready to use The AOL On Network Video Plugin!
 
 = To configure The AOL On Network Video Plugin: =
 
-1.	Expand the "Settings" tab and click "AOL Video Plugin Settings". The AOL video settings are displayed.
-2.	Change the settings as required, and then click the "Save Changes" button. 
+1. Expand the "Settings" tab and click "AOL Video Plugin Settings". The AOL video settings are displayed.
+2. Change the settings as required, and then click the "Save Changes" button. 
 
 Note: You must enter your Syndicator ID (SID) in the designated text field. If you don't enter your SID, you won't earn a share of the revenue from in-stream advertising. If you forgot your SID, contact our support team at:
 <https://support.aolonnetwork.com>
@@ -56,13 +56,13 @@ Note: You must enter your Syndicator ID (SID) in the designated text field. If y
 
 *General*
 
-= How can I access the video library without searching for a specific term or ID? =
+= How can I access the video library without using a search criteria? =
 To access the video library from The AOL On Network Plugin panel's Select Videos area, leave the Search field empty and click the "Search" button. The Search Results screen will show all available videos chronologically.  
 
 = How do I add videos to my article? =
 Adding videos to your article is a two-step process. 
-1.	Create a video group in the "Your Video Selections" list. The group can contain one or more videos. 
-2.	Click "ADD TO POST" at the bottom of The AOL On Network Plugin panel. A graphic placeholder for the player appears in your article at the cursor's current location.
+1. Create a video group in the "Your Video Selections" list. The group can contain one or more videos. 
+2. Click "ADD TO POST" at the bottom of The AOL On Network Plugin panel. A graphic placeholder for the player appears in your article at the cursor's current location.
 After submitting the article, the player with your first video already loaded appears in your article.
 
 = What's the difference between the "ADD TO POST" button and "Grab code" procedure? =
@@ -96,6 +96,7 @@ The timestamp on a thumbnail indicates the length of the video.
 The two buttons below the Search field, on the right, allow you to change the view of the Search Results screen. The first button changes it to a Large Thumbnail view. The second button changes it to a Details view. 
 
 = Where can I learn more about a video before I decide if it belongs in my video group (Selection list)? =
+There are two ways to get information about a video:
 * Mouseover the thumbnail to display general information about a video in a popup. 
 * Click the thumbnail to open a lightbox where you can play the video and see more details about the video. 
 
