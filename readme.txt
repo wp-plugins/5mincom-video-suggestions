@@ -97,8 +97,8 @@ The two buttons below the Search field, on the right, allow you to change the vi
 
 = Where can I learn more about a video before I decide if it belongs in my video group (Selection list)? =
 There are two ways to get information about a video:
-+ Mouseover the thumbnail to display general information about a video in a popup. 
-+ Click the thumbnail to open a lightbox where you can play the video and see more details about the video.
++	Mouseover the thumbnail to display general information about a video in a popup. 
++	Click the thumbnail to open a lightbox where you can play the video and see more details about the video.
 
 = Why is some of the text in the video information red? =
 The red text indicates restrictions placed on a video. These restrictions may include geographic restriction, expiration dates, etc.
