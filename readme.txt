@@ -57,7 +57,7 @@ Note: You must enter your Syndicator ID (SID) in the designated text field. If y
 *General*
 
 = How can I access the video library without using a search criteria? =
-To access the video library from The AOL On Network Plugin panel's Select Videos area, leave the Search field empty and click the "Search" button. The Search Results screen will show all available videos chronologically.  
+To access the video library from The AOL On Network Plugin panel's Select Videos area, leave the Search field empty and click the "Search" button. The Search Results screen is displayed with all available videos chronologically.  
 
 = How do I add videos to my article? =
 Adding videos to your article is a two-step process.
@@ -69,18 +69,24 @@ After submitting the article, the player with your first video already loaded ap
 = What's the difference between the "ADD TO POST" button and "Grab code" procedure? =
 The "ADD TO POST" button will embed a thumbnail of the initial video in your list at the current cursor location. This thumbnail is a graphic placeholder for the player. The actual player will only be visible after you submit your article.
 
-The "Grab code" procedure allows you to copy the code containing all of your Player and video information. This code can be embedded in a standard HTML page or shared with others.
+The "Grab code" procedure allows you to copy the code containing all of your player and video information. This code can be embedded in a standard HTML page or shared with others.
 
 = What's a playlist? =
 A Playlist is a pre-existing group of videos. Each playlist has its own unique ID. A playlist is selected by its ID in the "Use Playlist" tab.
 
 = How do I create a playlist? = 
-Playlists are created and edited in The AOL On Network Console. To access the Console, go to 
+Playlists are created and edited in The AOL On Network Console. To access the Console:
+
+* go to 
 http://console.aolonnetwork.com/ 
+
 Or,
-Click "console.aolonnetwork.com" in the "Use Playlist" tab in the Select Videos area.
+
+* Click "console.aolonnetwork.com" in the "Use Playlist" tab in the Select Videos area.
+
 From the Console, click the "Playlist" tab and follow the step-by-step instructions to create a new playlist or edit an existing playlist. After a playlist is created, it is automatically assigned an ID. 
-You can search for a playlist from The AOL On Network Plugin panel, by its ID in the "Use Playlist" tab.
+
+You can search for a playlist by its ID via The AOL On Network Plugin panel's "Use Playlist" tab.
 
 = In the Search Results screen, what does the blue circle at the bottom right of each thumbnail mean? =
 + The circle with a plus sign (+) indicates that the video can be added to The AOL On Network Video Plugin panel's Selection list. Click the plus sign to add the video to the list.
@@ -102,8 +108,6 @@ There are two ways to get information about a video:
 * Mouseover the thumbnail to display general information about a video in a popup. 
 * Click the thumbnail to open a lightbox where you can play the video and see more details about the video. 
 
-
-
 = Why is some of the text in the video information red? =
 The red text indicates restrictions placed on a video. These restrictions may include geographic restriction, expiration dates, etc.
 
@@ -114,7 +118,9 @@ Videos appear in the player in the same order as in your Selection list. To chan
 
 = How extensive are the filter and sort options? =
 The filter and sort mechanism is quite powerful. Sorts can be performed on relevance, popularity and chronology. The standard filters include time, category and studio. And if this is not enough, click "more" to add a language and geographic availability filter.
+
 If you're happy with a particular group of sort and filter settings, click "Save Filter" below the settings to preserve the configuration for future use. Saved sort and filter settings are listed under "MY FILTERS" at the top of the settings. 
+
 To delete a saved sort and filter configuration, mouseover the saved configuration, then and click the "X" that appear to the right. 
 
 
@@ -157,8 +163,8 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 2. The AOL On Network Video Plugin panel with an expanded Select Videos area
 3. The AOL On Network Video Plugin panel with expanded customization options
 4. The AOL On Network Video Plugin Search Results screen
-5. The AOL On Network Video Plugin Search Results (list view) with lightbox
-6. The AOL On Network Video Plugin Search Results (list view) with mouseover popup information
+5. The AOL On Network Video Plugin Search Results (Details view) with lightbox
+6. The AOL On Network Video Plugin Search Results (Details view) with mouseover popup information
 7. The AOL On Network Video Plugin Search Results extended Filter and Sort options
 
 == Changelog ==
