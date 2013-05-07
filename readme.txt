@@ -147,7 +147,6 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 
 
 
-
 == Screenshots ==
 
 1. The AOL On Network Video Plugin panel with a Search Results screen
