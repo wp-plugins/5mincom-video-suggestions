@@ -96,7 +96,6 @@ The timestamp on a thumbnail indicates the length of the video.
 The two buttons below the Search field, on the right, allow you to change the view of the Search Results screen. The first button changes it to a Large Thumbnail view. The second button changes it to a Details view. 
 
 = Where can I learn more about a video before I decide if it belongs in my video group (Selection list)? =
-There are two ways to get information about a video:
 * Mouseover the thumbnail to display general information about a video in a popup. 
 * Click the thumbnail to open a lightbox where you can play the video and see more details about the video. 
 
