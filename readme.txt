@@ -60,7 +60,8 @@ Note: You must enter your Syndicator ID (SID) in the designated text field. If y
 To access the video library from The AOL On Network Plugin panel's Select Videos area, leave the Search field empty and click the "Search" button. The Search Results screen will show all available videos chronologically.  
 
 = How do I add videos to my article? =
-Adding videos to your article is a two-step process. 
+Adding videos to your article is a two-step process.
+ 
 1. Create a video group in the "Your Video Selections" list. The group can contain one or more videos. 
 2. Click "ADD TO POST" at the bottom of The AOL On Network Plugin panel. A graphic placeholder for the player appears in your article at the cursor's current location.
 After submitting the article, the player with your first video already loaded appears in your article.
@@ -97,6 +98,7 @@ The two buttons below the Search field, on the right, allow you to change the vi
 
 = Where can I learn more about a video before I decide if it belongs in my video group (Selection list)? =
 There are two ways to get information about a video:
+
 * Mouseover the thumbnail to display general information about a video in a popup. 
 * Click the thumbnail to open a lightbox where you can play the video and see more details about the video. 
 
