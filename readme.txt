@@ -77,7 +77,7 @@ A Playlist is a pre-existing group of videos. Each playlist has its own unique I
 = How do I create a playlist? = 
 Playlists are created and edited in The AOL On Network Console. To access the Console:
 
-* go to 
+* Go to 
 http://console.aolonnetwork.com/ 
 
 Or,
