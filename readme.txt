@@ -170,7 +170,7 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 
 == Changelog ==
 
-
+N/A
 
 
 
