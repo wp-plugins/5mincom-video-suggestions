@@ -170,38 +170,7 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 
 == Changelog ==
 
-= 1.7.1 =
-Minor text tweaks
 
-= 1.7 =
-Updated screenshots
-
-= 1.6 =
-Updated documentation
-
-= 1.5 =
-Fixed typo in Admin page
-
-= 1.4 =
-No change (just for svn purposes)
-
-= 1.3 =
-Added custom admin page
-Update script from shared to embed
-
-= 1.2 =
-Changed admin scripts from http to https.
-Updated branding.
-
-= 1.1 =
-Removed unnecessary code.
-Changed the plugin from a raw code to a class.
-
-= 1.0 =
-Better and improved release.
-
-= 0.0.1 =
-First release.
 
 
 
