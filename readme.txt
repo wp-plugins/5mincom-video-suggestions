@@ -12,13 +12,13 @@ Requires at least: 2.9
 Tested up to: 3.5.1
 Stable tag: trunk
 
-A user-friendly solution to embed videos from our premium library. Video selection can be done manually or automatically via our semantic engine.
+The plugin offers a solution to embed videos from The AOL On video library. Video selection can be done manually or automatically via our semantic technology.
 
 == Description ==
 
-The AOL On Network creates, curates, programs, distributes videos across all screens and measures audience engagement.
-
-The AOL On Network's video syndication plugin solution includes access to a vast video library. These high quality, engaging videos can be delivered across multiple platforms and devices via The AOL On Network Video Plugin's innovative technology. The plugin enables Editors and Publishers to embed videos into their articles from within the WordPress work environment. The Editors will appreciate the seamless integration of the plugin's user interface and the minimal time and effort required to embed videos that best fits their article and target audience.
+The AOL On Network video library provides, curated, high quality video offerings from premium studios on a variety of topics. 
+The plugin's innovative technology enables Editors and Publishers to embed relevant and up-to-date videos into their articles from within the WordPress work environment. 
+The AOL On Network semantic technology can automatically match the best videos for your article. 
 
 
 Features:
