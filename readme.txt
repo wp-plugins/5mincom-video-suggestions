@@ -12,7 +12,7 @@ Requires at least: 2.9
 Tested up to: 3.5.1
 Stable tag: trunk
 
-The plugin offers a solution to embed videos from The AOL On video library. Video selection can be done manually or automatically via our semantic technology.
+The plugin enable you to embed videos from The AOL On video library in to your WordPress post.
 
 == Description ==
 
