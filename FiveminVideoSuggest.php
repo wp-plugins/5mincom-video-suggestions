@@ -4,7 +4,7 @@
 Plugin Name: The AOL On Network Video Plugin
 Plugin URI: http://wordpress.org/extend/plugins/5mincom-video-suggestions/
 Description: The AOL On Network's video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player's Layout and Advanced Settings can be easily configured using the plugin.
-Version: 1.5
+Version: 1.7
 Author: The AOL On Network
 Author URI: http://on.aol.com
 
