@@ -29,7 +29,7 @@ Features:
 + Add a video group or playlist to an article
 + Customize the player size and color theme to fit a page's look and feel
 
-If you need help with your plugin, please contact our support team at:
+For more information or additional assistance, please contact our support team at:
 <https://support.aolonnetwork.com/>
 
 == Installation ==
