@@ -34,6 +34,8 @@ For more information or additional assistance, please contact our support team a
 
 == Installation ==
 
+The AOL On Network Video Plugin is only available to Editors and Publishers who have locally installed WordPress.
+
 = To install The AOL On Network Video Plugin: =
 
 1.	Log in to your WordPress account. 
