@@ -26,7 +26,7 @@ The AOL On Network Wordpress plugin gives you access to AOL On's content exchang
 
 Oh, and did we mention that you can make money as well?  AOL On videos are automatically monetized for you.
 
-Don't be a stranger: For more information or additional assistance, please contact our support team at:
+Don't be a stranger: For more information or additional assistance, please contact our support team at 
 <https://support.aolonnetwork.com/>
 
 == Installation ==
