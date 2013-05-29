@@ -16,20 +16,18 @@ The plugin enables you to embed videos from The AOL On Network video library int
 
 == Description ==
 
-The AOL On Network video library provides, curated, high quality video offerings from premium studios on a variety of topics. 
-The plugin's innovative technology enables Editors and Publishers to embed relevant and up-to-date videos into their articles from within the WordPress work environment. 
-The AOL On Network semantic technology can automatically match the best videos for your article. 
+The AOL On Network Wordpress plugin gives you access to AOL On's content exchange of 600,000 premium videos, slick player and easy embedding functionality.  With the plugin you can: 
 
 
-Features:
++ Showcase TV-quality online video: The AOL On library content team works to source the best video content online from top brands-- think WSJ, E!, AP, Elle, The Travel Channel and Martha Stewart, just to name a few.
++ Stay up-to-date with the latest news:  Our content library is updated in real-time with 1,500 new, high-quality assets uploaded every day.
++ Easily find the videos you need: Browse by content publisher, category or by keyword. Or let us do the hard work: Semantic matching technology automatically suggests videos that are the best fit for your article by scanning its content.
++ Have more control: Program videos into custom video groups or playlists to keep visitors engaged on your site. Also, you can customize the player size and color theme to fit your page's look-and-feel.
++ Make sharing easy: The AOL On player has one-click sharing to Facebook, Twitter, email and a direct link code right in the player.
 
-+ Search The AOL On Network video library of over 600,000 videos
-+ Browse videos by Studio, Category or sub-categories
-+ Receive semantically matched videos for an article
-+ Add a video group or playlist to an article
-+ Customize the player size and color theme to fit a page's look and feel
+Oh, and did we mention that you can make money as well?  AOL On videos are automatically monetized for you.
 
-For more information or additional assistance, please contact our support team at:
+Don't be a stranger: For more information or additional assistance, please contact our support team at:
 <https://support.aolonnetwork.com/>
 
 == Installation ==
