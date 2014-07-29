@@ -4,7 +4,7 @@
 Plugin Name: The AOL On Network Video Plugin
 Plugin URI: http://wordpress.org/extend/plugins/5mincom-video-suggestions/
 Description: The AOL On Network's video plugin for WordPress, allows you to embed videos in your posts or pages using our vast video library. Browse, search, or use our semantic engine (which suggests videos matching the content of your post). Our player has HTML5 fallback support for non-Flash browsers. Player's Layout and Advanced Settings can be easily configured using the plugin.
-Version: 1.7
+Version: 1.8
 Author: The AOL On Network
 Author URI: http://on.aol.com
 
@@ -81,7 +81,7 @@ class FiveMinVideoSuggest {
 	// filter the_content to convert img's to videos (thats where the magic is done)
 	function the_content($content) {
 		
-		$pattern = '/<img .*class="fiveminVideoPlayer" [^>]*>/';
+		$pattern = '/<img *class="[^"]*fiveminVideoPlayer[^"]*" [^>]*>/';
 		preg_match_all($pattern , $content, $media);
 
 		for($i=0; $i<count($media[0]); $i++)
@@ -103,7 +103,15 @@ class FiveMinVideoSuggest {
 
 				$passedParams=implode("&",$splitted);
 				
-				$playerSeed = '<div style="overflow:hidden;"><script type="text/javascript" src="http://pshared.5min.com/Scripts/PlayerSeed.js?'.$passedParams.'"></script></div>';
+		
+				if(is_ssl()) {
+					$playerSeed = '<div style="overflow:hidden;"><script type="text/javascript" src="https://spshared.5min.com/Scripts/PlayerSeed.js?'.$passedParams.'"></script></div>';
+				}
+				else{
+					$playerSeed = '<div style="overflow:hidden;"><script type="text/javascript" src="http://pshared.5min.com/Scripts/PlayerSeed.js?'.$passedParams.'"></script></div>';
+				}
+				
+				
 
 				$content = str_replace($img, $playerSeed, $content);
 
@@ -111,9 +119,6 @@ class FiveMinVideoSuggest {
 		}
 		return $content;
 	}
-
-
-
 	// Add settings link on plugin page
 	function plugin_action_links($links) {
 		$settings_link = '<a href="options-media.php#videoSuggest">Settings</a>';

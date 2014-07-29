@@ -3,7 +3,7 @@
 Contributors: The AOL On Network
 Plugin Name: The AOL On Network Video Plugin
 Plugin URI: http://on.aol.com
-Version: 1.7
+Version: 1.8
 Author: The AOL On Network
 Author URI: http://on.aol.com
 Tags: video, semantic matching, ad revenue, AOL Video, video syndication, video plugin, video, embed video, blog tools, digital media planning, ad opportunities
@@ -168,6 +168,9 @@ Yes. The colors can be customized in the plugin panel's Advanced Option section.
 7. The AOL On Network Video Plugin Search Results extended Filter and Sort options
 
 == Changelog ==
+= 1.7 - 1.8 =
+Added https support to video tag
+Bug Fixes
 
 = 1.4 - 1.7 =
 Performance enhancements
